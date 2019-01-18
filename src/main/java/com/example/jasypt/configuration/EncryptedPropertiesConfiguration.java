@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.jasypt;
+package com.example.jasypt.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySource;
  * @author jjmoratilla
  */
 @Configuration
-@PropertySource("encrypted.properties")
+@PropertySource("${encrypted.properties.location}")
 public class EncryptedPropertiesConfiguration {
   
 }
